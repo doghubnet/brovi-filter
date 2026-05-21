@@ -1,0 +1,1 @@
+import { createFileRoute } from '@tanstack/react-router';export const Route=createFileRoute('/privacy')({component:()=> <div className='mx-auto max-w-3xl p-6 space-y-4'><h1 className='text-3xl font-semibold capitalize'>privacy</h1><p>Brovi Filter provides educational readiness guidance and stores demo data in your browser localStorage.</p></div>})

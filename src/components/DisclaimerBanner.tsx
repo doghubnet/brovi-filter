@@ -1,0 +1,1 @@
+export function DisclaimerBanner(){return <div className='rounded-xl border border-amber-400/40 bg-amber-100/50 p-3 text-sm text-amber-900'>Brovi Filter is an educational readiness tool. Do not enter bank passwords, card numbers, or private login credentials.</div>}
