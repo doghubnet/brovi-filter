@@ -1,0 +1,21 @@
+import { rootRoute } from './routes/__root'
+import { Route as IndexRoute } from './routes/index'
+import { Route as LoginRoute } from './routes/login'
+import { Route as RegisterRoute } from './routes/register'
+import { Route as PricingRoute } from './routes/pricing'
+import { Route as PrivacyRoute } from './routes/privacy'
+import { Route as TermsRoute } from './routes/terms'
+import { Route as AppRoute } from './routes/app'
+import { Route as AppIndexRoute } from './routes/app.index'
+import { Route as AppProfileRoute } from './routes/app.profile'
+import { Route as AppDocumentsRoute } from './routes/app.documents'
+import { Route as AppProgramMatchRoute } from './routes/app.program-match'
+import { Route as AppBankRoute } from './routes/app.bank'
+import { Route as AppInterviewRoute } from './routes/app.interview'
+import { Route as AppReportRoute } from './routes/app.report'
+import { Route as AppConsultantRoute } from './routes/app.consultant'
+import { Route as AppSettingsRoute } from './routes/app.settings'
+import { Route as AppAdminRoute } from './routes/app.admin'
+
+const AppChildren = AppRoute.addChildren([AppIndexRoute, AppProfileRoute, AppDocumentsRoute, AppProgramMatchRoute, AppBankRoute, AppInterviewRoute, AppReportRoute, AppConsultantRoute, AppSettingsRoute, AppAdminRoute])
+export const routeTree = rootRoute.addChildren([IndexRoute, LoginRoute, RegisterRoute, PricingRoute, PrivacyRoute, TermsRoute, AppChildren])
